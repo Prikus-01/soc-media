@@ -28,7 +28,7 @@ app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 
 // Swagger/OpenAPI setup
-const serverUrl = process.env.BASE_URL || `http://localhost:${PORT}`;
+const serverUrl = process.env.BASE_URL || "/";
 const swaggerDefinition = {
   openapi: "3.0.3",
   info: {
